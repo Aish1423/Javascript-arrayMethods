@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //ex 5 items-> [250, 645, 300, 9000, 50] all items have an offer of 10% OFF on them. chnge the array to store final practice after applying offer.
+        // 10% offer -> val/10;
+        // val = val - offer 
+       let items = [250, 645, 300, 9000, 50];
+       
+    //    let i = 0;
+    //    for(let val of items){
+    //        console.log(`value at index ${i} = ${val}` );
+    //        let offer = val/10;
+    //        items[i] = items[i] - offer;
+    //        console.log(`value after offer = ${items[i]}` );
+    
+    //        i++;
+           
+    //    }
+    //  another way
+      for(let i = 0; i<items.length; i++){
+        let offer = items[i]/ 10;
+        items[i] -= offer;
+
+      }
+      console.log(items);
+      
+       </script>
+</body>
+</html>
+
